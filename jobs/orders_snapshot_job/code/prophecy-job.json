@@ -1,0 +1,229 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "10",
+    "jobId" : "jobs/orders_snapshot_job",
+    "name" : "orders_snapshot_job",
+    "dagName" : "T9fMuh1QW4TS_E0aqplUIg_",
+    "schedule" : "None",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "63TZ2vhR",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ ],
+    "endDate" : "2024-02-29",
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
+  },
+  "processes" : {
+    "hf37o133FGUPcf0itgPSy$$Jrx4KDlUcdaKERkSKmvqW" : {
+      "id" : "hf37o133FGUPcf0itgPSy$$Jrx4KDlUcdaKERkSKmvqW",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "model",
+        "slug" : "model",
+        "x" : -400,
+        "y" : -320
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "D6SR3LYpXI7Yf_2n5YTYh$$NupcSZiPiz0WcF6moPB3k",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "zlSK-k8XKzJ1Qdm_d6hDK$$SidMa5eHmIkse4DgfkfWa",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : true,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : "orders_model",
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "51",
+        "runMode" : "model",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "7",
+        "gitEntityValue" : "dev_haresh",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "orders_model",
+          "value" : "orders_model",
+          "id" : "51/.prophecy/metadata/sqlmodels/orders_model",
+          "name" : "orders_model"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "cpp-kDa8FuBMpWFD5YHi7$$tUtawUa7kbaGpEZ80SvQe" : {
+      "id" : "cpp-kDa8FuBMpWFD5YHi7$$tUtawUa7kbaGpEZ80SvQe",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "snapshot",
+        "slug" : "snapshot",
+        "x" : -200,
+        "y" : -320
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "a4zX7V-jl5dl7tg_jQzSt$$8QEYZmnsGSwalzgFkCj5h",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "3LJMirG3Wrrk4kjW93ng5$$vAsjcWZbL7zZsjw9CCC5P",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "51",
+        "runMode" : "snapshot",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : "orders_snapshot",
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "7",
+        "gitEntityValue" : "dev_haresh",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "orders_model",
+          "value" : "orders_model",
+          "id" : "51/.prophecy/metadata/sqlmodels/orders_model",
+          "name" : "orders_model"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "EIsqW2kMhk29l4Az0THO8$$jDiPd4F4ks17M3yuuXA_2",
+    "source" : "hf37o133FGUPcf0itgPSy$$Jrx4KDlUcdaKERkSKmvqW",
+    "target" : "cpp-kDa8FuBMpWFD5YHi7$$tUtawUa7kbaGpEZ80SvQe",
+    "sourcePort" : "zlSK-k8XKzJ1Qdm_d6hDK$$SidMa5eHmIkse4DgfkfWa",
+    "targetPort" : "a4zX7V-jl5dl7tg_jQzSt$$8QEYZmnsGSwalzgFkCj5h"
+  } ]
+}

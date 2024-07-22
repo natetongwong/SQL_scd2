@@ -1,0 +1,4 @@
+order_id,order_date,status,updated_date
+1,01-02-2024,completed,03-04-2024
+2,02-02-2024,in_transit,03-04-2024
+3,03-01-2024,ordered,03-04-2024
